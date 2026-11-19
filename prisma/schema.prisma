@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// AI-generated images (character portraits, scene illustrations)
+model GeneratedImage {
+  id        String   @id @default(cuid())
+  kind      String   @default("portrait") // portrait | scene
+  subject   String   @default("") // character name or scene label
+  prompt    String   @default("")
+  mimeType  String   @default("image/png")
+  data      String // base64 payload
+  createdAt DateTime @default(now())
+
+  @@index([kind, createdAt])
+}

@@ -1,0 +1,19 @@
+▲ Next.js 16.4.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.28:3000
+- Environments: .env
+✓ Ready in 2.1s
+✓ Running next.config.ts took 163ms
+
+⚠ Slow filesystem detected. The benchmark took 757ms. If /home/fubuki/Downloads/aerfala-source-code/.next/dev is a network drive, consider moving it to a local folder.
+See more: https://nextjs.org/docs/app/guides/local-development
+○ Compiling / ...
+ GET / 200 in 2.4s (next.js: 959ms, application-code: 1460ms)
+ POST /api/gemini/test 502 in 11.1s (next.js: 388ms, application-code: 10.7s)
+ POST /api/gemini/test 200 in 649ms (next.js: 20ms, application-code: 629ms)
+ POST /api/gemini/image 502 in 5.4s (next.js: 116ms, application-code: 5.3s)
+ POST /api/gemini/image 502 in 1811ms (next.js: 14ms, application-code: 1798ms)
+ POST /api/gemini/image 502 in 1815ms (next.js: 10ms, application-code: 1806ms)
+ POST /api/gemini/image 502 in 1818ms (next.js: 8ms, application-code: 1810ms)
+ POST /api/gemini/image 502 in 1714ms (next.js: 9ms, application-code: 1705ms)
+ POST /api/gemini/chat 502 in 788ms (next.js: 128ms, application-code: 660ms)
